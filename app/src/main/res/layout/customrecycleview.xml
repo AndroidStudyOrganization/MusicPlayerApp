@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_song"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
@@ -19,26 +20,32 @@
         android:id="@+id/textSong"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="44dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="28dp"
+        android:layout_toEndOf="@+id/imageMusic"
         android:text="TextView"
+        android:textColor="@color/white"
         android:textSize="16dp"
         android:textStyle="bold"
-        android:textAlignment="inherit"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.383"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.009"
+        app:layout_constraintStart_toEndOf="@+id/imageMusic"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textArtist"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="72dp"
+        android:layout_below="@+id/textSong"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="8dp"
+
+        android:layout_toEndOf="@+id/imageMusic"
         android:text="TextView"
+        android:textColor="@color/white"
         android:textSize="16dp"
-        android:textAlignment="viewEnd"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.387"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/imageMusic"
+        app:layout_constraintTop_toBottomOf="@+id/textSong" />
+</RelativeLayout>

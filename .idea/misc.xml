@@ -4,7 +4,8 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/StudyHouse/HK1_Nam4/AndroidNC/MusicPlayer/app/src/main/res/layout/activity_main.xml" value="0.25" />
-        <entry key="..\:/StudyHouse/HK1_Nam4/AndroidNC/MusicPlayer/app/src/main/res/layout/customrecycleview.xml" value="0.5" />
+        <entry key="..\:/StudyHouse/HK1_Nam4/AndroidNC/MusicPlayer/app/src/main/res/layout/activity_music_player.xml" value="0.25" />
+        <entry key="..\:/StudyHouse/HK1_Nam4/AndroidNC/MusicPlayer/app/src/main/res/layout/customrecycleview.xml" value="0.25" />
       </map>
     </option>
   </component>

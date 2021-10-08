@@ -1,12 +1,22 @@
 package com.example.musicplayer;
 
-public class Music {
-    int imgMusic;
-    String textSong;
-    String textArtist;
+import java.io.Serializable;
+
+public class Music implements Serializable {
+    private int imgMusic;
+    private int mp3;
+    private String textSong;
+    private String textArtist;
 
     public Music(int imgMusic, String textSong, String textArtist) {
         this.imgMusic = imgMusic;
+        this.textSong = textSong;
+        this.textArtist = textArtist;
+    }
+
+    public Music(int imgMusic, String textSong, String textArtist, int mp3) {
+        this.imgMusic = imgMusic;
+        this.mp3 = mp3;
         this.textSong = textSong;
         this.textArtist = textArtist;
     }
@@ -36,5 +46,13 @@ public class Music {
 
     public void setTextArtist(String textArtist) {
         this.textArtist = textArtist;
+    }
+
+    public int getMp3() {
+        return mp3;
+    }
+
+    public void setMp3(int mp3) {
+        this.mp3 = mp3;
     }
 }
